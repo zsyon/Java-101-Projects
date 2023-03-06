@@ -12,9 +12,7 @@ public class Main {
     //double kdvli = (Kdv*tutar) + tutar;
 
     boolean sonuc = tutar > 1000;
-
     double kdvli = sonuc ? (0.08*tutar) + tutar : (0.18*tutar) + tutar;
-
     double kdvTutari = kdvli - tutar;
 
     System.out.println("KDV'siz Fiyat : " + tutar);
@@ -22,5 +20,5 @@ public class Main {
     System.out.println("KDV Tutarı : " + kdvTutari);
     
   }
-  
+ 
 }
