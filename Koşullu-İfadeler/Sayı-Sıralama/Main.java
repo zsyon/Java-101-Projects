@@ -12,7 +12,5 @@ public class Main {
     else{
       System.out.println("En küçük sayi " + sayi3);
     }
-
-  }
-  
+  } 
 }
