@@ -29,7 +29,6 @@ public class Main {
 
     ort = (mat+fizik+kimya+turce+tarih+muzuk) / 6 ;
 
-
     System.out.print("Derlerin ortalaması : ");
     System.out.println(ort);
 
