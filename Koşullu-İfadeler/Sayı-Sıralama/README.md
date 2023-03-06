@@ -1,6 +1,6 @@
 # Sayıları Büyükten Küçüğe Sıralama
 
-Java koşullu ifadeler ile girilen 3 sayıyı büyükten küçüğe sıralayan programo yapın.
+Java koşullu ifadeler ile girilen 3 sayıyı büyükten küçüğe sıralayan programı yapın.
 
 ## Ödev
 
