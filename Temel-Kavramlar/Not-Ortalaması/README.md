@@ -1,0 +1,1 @@
+# Not Ortalaması Hesaplayan Program
