@@ -17,32 +17,38 @@ public class Main {
     System.out.print("Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ): ");
     yolculukTipi = input.nextInt();
 
-    double tutar, indirimliTutar =0, yasİndirimi ;
+    double tutar, indirimliTutar =0, yasİndirimi, gidisDonusIndirimi , toplam=0 ;
     tutar = mesafe * 0.10;
 
-    if(mesafe>0 && yas>0 && yolculukTipi==1 ){
+    if(mesafe>0 && yas>0 && yolculukTipi==1 || yolculukTipi==1 ){
 
       if(yas<12){
         yasİndirimi = tutar * 0.5;
         indirimliTutar = tutar - yasİndirimi;
-
+        System.out.println(indirimliTutar);
       }
       else if(yas>12 && yas<24){
+        yasİndirimi = tutar * 0.1;
+        indirimliTutar = tutar - yasİndirimi;
 
       }
       else if(yas>65){
+        yasİndirimi = tutar * 0.3;
+        indirimliTutar = tutar - yasİndirimi;
 
       }
-      
+    else if(mesafe>0 && yas>0 && yolculukTipi==1 || yolculukTipi==2){
+      if(yolculukTipi == 2){
+        gidisDonusIndirimi = indirimliTutar * 0.2 ;
+        toplam = (indirimliTutar - gidisDonusIndirimi)*2 ;
+        System.out.println(toplam);
+      }
     }
-    else if(yolculukTipi==2){
-      
     }
     else{
       System.out.println("Hatalı Giriş Yaptınız !");
     }
-
-    System.out.println(indirimliTutar);
+    
     
   }
   
