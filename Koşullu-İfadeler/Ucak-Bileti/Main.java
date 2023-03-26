@@ -20,7 +20,7 @@ public class Main {
     double tutar, indirimliTutar =0, yasİndirimi, gidisDonusIndirimi , toplam=0 ;
     tutar = mesafe * 0.10;
 
-    if(mesafe>0 && yas>0 && yolculukTipi==1 || yolculukTipi==2 ){
+    if(mesafe>0 && yas>0 && (yolculukTipi==1 || yolculukTipi==2) ){
       if(yas<12){
         yasİndirimi = tutar * 0.5;
         indirimliTutar = tutar - yasİndirimi;
@@ -59,7 +59,14 @@ public class Main {
         }
       }
       else{
-        System.out.println(tutar);
+        if(yolculukTipi==2){
+          gidisDonusIndirimi = tutar * 0.2;
+          toplam = (tutar - gidisDonusIndirimi) * 2;
+          System.out.println(toplam);
+        }
+        else{
+          System.out.println(tutar);
+        }
       }
     }
     else{
