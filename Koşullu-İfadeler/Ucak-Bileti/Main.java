@@ -20,33 +20,32 @@ public class Main {
     double tutar, indirimliTutar =0, yasİndirimi, gidisDonusIndirimi , toplam=0 ;
     tutar = mesafe * 0.10;
 
-    if(mesafe>0 && yas>0 && yolculukTipi==1 || yolculukTipi==1 ){
-
-      if(yas<12){
-        yasİndirimi = tutar * 0.5;
-        indirimliTutar = tutar - yasİndirimi;
-        System.out.println(indirimliTutar);
-      }
-      else if(yas>12 && yas<24){
-        yasİndirimi = tutar * 0.1;
-        indirimliTutar = tutar - yasİndirimi;
-
-      }
-      else if(yas>65){
-        yasİndirimi = tutar * 0.3;
-        indirimliTutar = tutar - yasİndirimi;
-
-      }
-    else if(mesafe>0 && yas>0 && yolculukTipi==1 || yolculukTipi==2){
-      if(yolculukTipi == 2){
-        gidisDonusIndirimi = indirimliTutar * 0.2 ;
-        toplam = (indirimliTutar - gidisDonusIndirimi)*2 ;
-        System.out.println(toplam);
-      }
-    }
+    if(mesafe>0 && yas>0 && yolculukTipi==1 || yolculukTipi==2 ){
+      System.out.println("başarılı");
     }
     else{
       System.out.println("Hatalı Giriş Yaptınız !");
+    }
+
+
+
+
+
+
+
+    if(yas<12){
+      yasİndirimi = tutar * 0.5;
+      indirimliTutar = tutar - yasİndirimi;
+      System.out.println(indirimliTutar);
+    }
+    else if(yas>12 && yas<24){
+      yasİndirimi = tutar * 0.1;
+      indirimliTutar = tutar - yasİndirimi;
+
+    }
+    else if(yas>65){
+      yasİndirimi = tutar * 0.3;
+      indirimliTutar = tutar - yasİndirimi;
     }
     
     
