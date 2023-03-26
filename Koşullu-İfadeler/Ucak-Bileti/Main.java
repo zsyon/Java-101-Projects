@@ -36,26 +36,34 @@ public class Main {
       else if(yas>12 && yas<24){
         yasİndirimi = tutar * 0.1;
         indirimliTutar = tutar - yasİndirimi;
+        if(yolculukTipi==2){
+          gidisDonusIndirimi = indirimliTutar * 0.2;
+          toplam = (indirimliTutar - gidisDonusIndirimi) * 2;
+          System.out.println(toplam);
+        }
+        else{
+          System.out.println(indirimliTutar);
+        }
   
       }
       else if(yas>65){
         yasİndirimi = tutar * 0.3;
         indirimliTutar = tutar - yasİndirimi;
+        if(yolculukTipi==2){
+          gidisDonusIndirimi = indirimliTutar * 0.2;
+          toplam = (indirimliTutar - gidisDonusIndirimi) * 2;
+          System.out.println(toplam);
+        }
+        else{
+          System.out.println(indirimliTutar);
+        }
+      }
+      else{
+        System.out.println(tutar);
       }
     }
     else{
       System.out.println("Hatalı Giriş Yaptınız !");
     }
-
-
-
-
-
-
-
-    
-    
-    
   }
-  
 }
