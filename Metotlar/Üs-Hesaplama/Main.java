@@ -3,7 +3,10 @@ import java.util.Scanner;
 public class Main {
 
   static int ustel(int a, int b){
-    return a;
+    if (b == 0) {
+      return 1;
+    }
+    return a * ustel(a, b-1);
   }
 
   public static void main(String[] args) {
