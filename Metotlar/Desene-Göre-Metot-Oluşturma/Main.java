@@ -4,9 +4,18 @@ public class Main {
 
   static void f(int n){
 
-    for (int i=n ; i<=0 ; i--){
-      System.out.println(n);
+    int a = 1;
+
+    for (int i=n ; i>=0 ; i-=5){
+      System.out.print(i + " ");
+      a = i;
     }
+
+    for (int i=a+5 ; i<=n ; i+=5){
+      System.out.print(i + " ");
+    }
+
+    
 
   }
 
