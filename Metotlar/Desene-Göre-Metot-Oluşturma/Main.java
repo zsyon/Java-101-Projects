@@ -2,10 +2,12 @@ import java.util.Scanner;
 
 public class Main {
 
-  static String f(int n){
+  static void f(int n){
 
+    for (int i=n ; i<=0 ; i--){
+      System.out.println(n);
+    }
 
-    return "a";
   }
 
   public static void main(String[] args) {
@@ -16,8 +18,7 @@ public class Main {
     System.out.print("Sayı giriniz : ");
     sayi = input.nextInt();
 
-    System.out.println(f(sayi));
-
+    f(sayi);
 
   }
 }
