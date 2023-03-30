@@ -6,17 +6,32 @@ public class Main {
 
     int a = 1;
 
-    for (int i=n ; i>=0 ; i-=5){
-      System.out.print(i + " ");
-      a = i;
+    if(n%5 == 0){
+
+      for (int i=n ; i>=0 ; i-=5){
+        System.out.print(i + " ");
+        a = i;
+      }
+  
+      for (int i=a+5 ; i<=n ; i+=5){
+        System.out.print(i + " ");
+      }
+
     }
+    else{
 
-    for (int i=a+5 ; i<=n ; i+=5){
-      System.out.print(i + " ");
+      for (int i=n ; i>=0 ; i-=5){
+        System.out.print(i + " ");
+        a = i;
+      }
+      System.out.print(a-5 + " ");
+  
+      for (int i=a ; i<=n ; i+=5){
+        System.out.print(i + " ");
+      }
+  
     }
-
-    
-
+  
   }
 
   public static void main(String[] args) {
